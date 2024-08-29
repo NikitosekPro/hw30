@@ -367,10 +367,27 @@ body {
     border: none;
     transform: scale(1);
     transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+    animation: scale 1000ms ease-in-out infinite;
 }
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .hero-button:hover {
     transform: scale(1.1);
+    animation: none;
 }
 
 /* INFORMATION */
